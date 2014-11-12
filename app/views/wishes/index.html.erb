@@ -1,0 +1,11 @@
+<% if flash[:notice] %>
+<div class="notice"><%= flash[:notice] %></div>
+<% end %>
+
+<ol class="wishes">
+  <% @wishes.each do |wish| %>
+  <li class="wish"><%= link_to wish.title, wish %></li>
+  <% end %>
+</ol>
+
+<div class="buttons"><%= link_to 'New Wish', new_wish_path, class: 'button secondary' %></div>

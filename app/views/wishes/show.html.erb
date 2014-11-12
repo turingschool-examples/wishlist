@@ -1,0 +1,13 @@
+<% if flash[:notice] %>
+<div class="notice"><%= flash[:notice] %></div>
+<% end %>
+
+<h2 class="wish-title"><%= @wish.title %></h2>
+
+<p class="wish-description"><%= @wish.description %></p>
+
+<div class="buttons">
+<%= link_to 'Back', wishes_path, class: 'button secondary' %>
+<%= link_to 'Edit', edit_wish_path(@wish), class: 'button secondary' %>
+<%= link_to 'Remove', @wish, method: 'delete', class: 'button secondary' %>
+</div>
