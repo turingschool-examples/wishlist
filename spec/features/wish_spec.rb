@@ -29,11 +29,11 @@ feature 'User visits an individual wish' do
   end
 
   scenario 'they can go back to the index' do
-    skip
+    skip "You all are going to implement this."
   end
 
   scenario 'they can remove a wish' do
-    skip
+    skip "You all are going to implement this."
   end
 
 end
